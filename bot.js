@@ -13,6 +13,7 @@ function respond() {
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/;
+      botRegexMeme = /^\/memes/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -171,6 +172,12 @@ function respond() {
       postMessage(siege2);
     this.res.end();
   }
+  
+  else if(request.text && botRegexMeme.test(request.text)) {
+  this.res.writeHead(200);
+  postMessage("тєℓℓ мє, ωнαт ιт ιѕ тнαт уσυ нυмαηѕ яєƒєя тσ αѕ α мємє?");
+  this.res.end();
+}
   
   else {
     console.log("don't care");
