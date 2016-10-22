@@ -7,7 +7,9 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexTST = /^\/test/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
+      botRegexTST = /^\/test/; botRegexJs = /^\/jesus/; botRegexMTG = /^\/metalgear/;
+    
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
@@ -138,6 +140,16 @@ function respond() {
   else if(request.text && botRegexTST.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Hello world!");
+    this.res.end();
+  } 
+  else if(request.text && botRegexJs.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/300x216.jpeg.f417522755ae49f3a1a0deeb4aa27089");
+    this.res.end();
+  } 
+  else if(request.text && botRegexMTG.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/504x297.jpeg.cfe993621cfd499c9c31256ab289623f");
     this.res.end();
   } 
   else if(request.text && botRegexWk.test(request.text)) {
