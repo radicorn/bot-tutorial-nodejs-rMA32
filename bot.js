@@ -10,6 +10,7 @@ function respond() {
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexTST = /^\/test/; botRegexJs = /^\/jesus/; botRegexMTG = /^\/metalgear/; botRegexSys = /^\/thesystem/;
       botRegexJkr = /^\/joker/; botRegexBig = /^\/bigboss/; botRegexBid = /^\/bidoof/; botRegexTrl = /^\/troll/; 
+      botRegexBj = /^\/billyjoel/; 
       botRegexJack = /^\/jack/; botRegexAus = /^\/austin/; botRegexZach = /^\/zach/; botRegexMatt = /^\/matt/; botRegexJim = /^\/jimmy/; botRegexBen = /^\/ben/; botRegexNol = /^\/nolan/;
     
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
@@ -162,6 +163,11 @@ function respond() {
   else if(request.text && botRegexJkr.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/504x316.jpeg.daba00b252cf462785e5f4f0931a3399");
+    this.res.end();
+  }
+  else if(request.text && botRegexBj.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://v.groupme.com/26173240/2016-10-23T05:28:50Z/33c88bf7.480x272r90.mp4");
     this.res.end();
   } 
   else if(request.text && botRegexBig.test(request.text)) {
