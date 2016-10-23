@@ -186,7 +186,7 @@ function respond() {
   } 
   else if(request.text && botRegexJim.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1125x1500.jpeg.6aead262e8ed4055942344b94f7a6d2b");
+    postMessage("https://i.groupme.com/1033x1056.jpeg.071f9d4b89fb46948e87390827a4512f");
     this.res.end();
   } 
   else if(request.text && botRegexMatt.test(request.text)) {
