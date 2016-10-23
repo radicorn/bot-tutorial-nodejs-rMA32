@@ -161,7 +161,7 @@ function respond() {
   else if(request.text && botRegexBrn.test(request.text)) {
     this.res.writeHead(200);
     postMessage("BORN DIFFERENT");
-    time.sleep(5)
+    time.sleep(5);
     postMessage("BORN INNOCENT");
     this.res.end();
   } 
