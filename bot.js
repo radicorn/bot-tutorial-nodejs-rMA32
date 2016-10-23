@@ -9,6 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexTST = /^\/test/; botRegexJs = /^\/jesus/; botRegexMTG = /^\/metalgear/; botRegexSys = /^\/thesystem/;
+      botRegexBrn = /^\/borndifferent/;
     
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
@@ -155,6 +156,13 @@ function respond() {
   else if(request.text && botRegexSys.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/718x404.gif.a873031f373248b595d8a1be21020d44");
+    this.res.end();
+  } 
+  else if(request.text && botRegexBrn.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("BORN DIFFERENT");
+    time.sleep(5)
+    postMessage("BORN INNOCENT");
     this.res.end();
   } 
   else if(request.text && botRegexWk.test(request.text)) {
