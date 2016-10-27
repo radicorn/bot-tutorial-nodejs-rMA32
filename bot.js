@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexTST = /^\/test/; botRegexJs = /^\/jesus/; botRegexMTG = /^\/metalgear/; botRegexSys = /^\/thesystem/;
+      botRegexTST = /^\/test/; botRegexJs = /^\jesus/; botRegexMTG = /^\/metalgear/; botRegexSys = /^\/thesystem/;
       botRegexJkr = /^\/joker/; botRegexBig = /^\/bigboss/; botRegexBid = /^\/bidoof/; botRegexTrl = /^\/troll/; 
       botRegexBj = /^\/billyjoel/; 
       botRegexJack = /^\/jack/; botRegexAus = /^\/austin/; botRegexZach = /^\/zach/; botRegexMatt = /^\/matt/; botRegexJim = /^\/jimmy/; botRegexBen = /^\/ben/; botRegexNol = /^\/nolan/;
