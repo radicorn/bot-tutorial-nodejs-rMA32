@@ -8,10 +8,10 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexTST = /^\/test/; botRegexJs = /^\jesus/; botRegexMTG = /^\/metalgear/; botRegexSys = /^\/thesystem/;
+      botRegexTST = /^\/test/; botRegexJs = /^\jesus/; botRegexJS = /^\Jesus/; botRegexJSS = /^\JESUS/; botRegexMTG = /^\/metalgear/; botRegexSys = /^\/thesystem/;
       botRegexJkr = /^\/joker/; botRegexBig = /^\/bigboss/; botRegexBid = /^\/bidoof/; botRegexTrl = /^\/troll/; 
       botRegexBj = /^\/billyjoel/; 
-      botRegexJack = /^\/jack/; botRegexAus = /^\/austin/; botRegexZach = /^\/zach/; botRegexMatt = /^\/matt/; botRegexJim = /^\/jimmy/; botRegexBen = /^\/ben/; botRegexNol = /^\/nolan/;
+      botRegexJack = /^\/jack/; botRegexAus = /^\/austin/; botRegexZach = /^\/zach/; botRegexMatt = /^\/matt/; botRegexJim = /^\/jimbo/; botRegexBen = /^\/ben/; botRegexNol = /^\/nolan/;
     
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
@@ -150,6 +150,16 @@ function respond() {
     postMessage("https://i.groupme.com/300x216.jpeg.f417522755ae49f3a1a0deeb4aa27089");
     this.res.end();
   } 
+  else if(request.text && botRegexJS.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/300x216.jpeg.f417522755ae49f3a1a0deeb4aa27089");
+    this.res.end();
+  } 
+  else if(request.text && botRegexJSS.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/300x216.jpeg.f417522755ae49f3a1a0deeb4aa27089");
+    this.res.end();
+  } 
   else if(request.text && botRegexMTG.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/504x297.jpeg.cfe993621cfd499c9c31256ab289623f");
@@ -177,7 +187,7 @@ function respond() {
   } 
   else if(request.text && botRegexJack.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1080x1440.jpeg.82859f2e94034ad0a858d9071271b1d3");
+    postMessage("https://i.groupme.com/1273x1276.jpeg.b1cc82e4379243718dd2b1264d438fc8");
     this.res.end();
   } 
   else if(request.text && botRegexAus.test(request.text)) {
