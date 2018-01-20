@@ -13,6 +13,8 @@ function respond() {
       botRegexBj = /^\/billyjoel/; botRegexDio = /^\/dio/; 
       botRegexJack = /^\/jack/; botRegexAus = /^\/austin/; botRegexZach = /^\/zach/; botRegexMatt = /^\/matt/; botRegexJim = /^\/jimbo/; botRegexBen = /^\/ben/; botRegexNol = /^\/nolan/;
     
+      botRegexFNAF = /^\fnaf/;  
+    
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
