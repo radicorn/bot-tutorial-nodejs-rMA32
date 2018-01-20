@@ -13,7 +13,7 @@ function respond() {
       botRegexBj = /^\/billyjoel/; botRegexDio = /^\/dio/; 
       botRegexJack = /^\/jack/; botRegexAus = /^\/austin/; botRegexZach = /^\/zach/; botRegexMatt = /^\/matt/; botRegexJim = /^\/jimbo/; botRegexBen = /^\/ben/; botRegexNol = /^\/nolan/;
     
-      botRegexFNAF = /^\fnaf/;  
+      botRegexFNAF = /^\It's that time of day/;  
     
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
@@ -145,6 +145,15 @@ function respond() {
   else if(request.text && botRegexTST.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Hello world!");
+    this.res.end();
+  } 
+   else if(request.text && botRegexFNAF.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/504x336.jpeg.87c77d2cf64b4d7a876100cac6415f6f");
+    postMessage("https://i.groupme.com/400x225.jpeg.3b517c38da7d4ba2b457e4d40cf76f79");
+     postMessage("https://i.groupme.com/504x504.jpeg.194b8016c4f94bad839d194f13c7e6f3");
+     postMessage("https://i.groupme.com/1136x638.jpeg.6bef7d4a8b784c64acde361a3dbe0f53");
+     postMessage("https://i.groupme.com/400x225.jpeg.26ecd45ac5634e918ab6098f88fdcebe");
     this.res.end();
   } 
   else if(request.text && botRegexJs.test(request.text)) {
